@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_game_test/game_core/game.dart';
 
 import 'game_core/main_loop.dart';
 
@@ -15,9 +16,7 @@ void main() {
     );
     runApp(const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Center(
-        child: Text('Game'),
-      ),
+      home: Game(),
     ));
   });
 
